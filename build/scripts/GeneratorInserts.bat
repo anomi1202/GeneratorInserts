@@ -1,7 +1,7 @@
 @if "%DEBUG%" == "" @echo off
 @rem ##########################################################################
 @rem
-@rem  generator startup script for Windows
+@rem  GeneratorInserts startup script for Windows
 @rem
 @rem ##########################################################################
 
@@ -13,7 +13,7 @@ if "%DIRNAME%" == "" set DIRNAME=.
 set APP_BASE_NAME=%~n0
 set APP_HOME=%DIRNAME%..
 
-@rem Add default JVM options here. You can also use JAVA_OPTS and GENERATOR_OPTS to pass JVM options to this script.
+@rem Add default JVM options here. You can also use JAVA_OPTS and GENERATOR_INSERTS_OPTS to pass JVM options to this script.
 set DEFAULT_JVM_OPTS=
 
 @rem Find java.exe
@@ -65,17 +65,17 @@ set CMD_LINE_ARGS=%*
 
 set CLASSPATH=%APP_HOME%\lib\generator-0.1.0.jar;%APP_HOME%\lib\slf4j-api-1.7.25.jar;%APP_HOME%\lib\slf4j-log4j12-1.7.25.jar;%APP_HOME%\lib\log4j-1.2.17.jar
 
-@rem Execute generator
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %GENERATOR_OPTS%  -classpath "%CLASSPATH%" Main %CMD_LINE_ARGS%
+@rem Execute GeneratorInserts
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %GENERATOR_INSERTS_OPTS%  -classpath "%CLASSPATH%" Main %CMD_LINE_ARGS%
 
 :end
 @rem End local scope for the variables with windows NT shell
 if "%ERRORLEVEL%"=="0" goto mainEnd
 
 :fail
-rem Set variable GENERATOR_EXIT_CONSOLE if you need the _script_ return code instead of
+rem Set variable GENERATOR_INSERTS_EXIT_CONSOLE if you need the _script_ return code instead of
 rem the _cmd.exe /c_ return code!
-if  not "" == "%GENERATOR_EXIT_CONSOLE%" exit 1
+if  not "" == "%GENERATOR_INSERTS_EXIT_CONSOLE%" exit 1
 exit /b 1
 
 :mainEnd
