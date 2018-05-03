@@ -1,9 +1,6 @@
-import GenerateData.InsertsRows;
 import Report.GeneratorReportsDataFactory;
 
 import static DataTypes.ReportType.CONTROL_REPORT;
-import static DataTypes.ReportType.REPORT_DEBT_NPF_MSK;
-import static DataTypes.ReportType.REPORT_DEBT_NPF_SUD;
 
 public class Main {
 
