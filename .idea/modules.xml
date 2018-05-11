@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GeneratorInserts.iml" filepath="$PROJECT_DIR$/.idea/modules/GeneratorInserts.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GeneratorInserts_main.iml" filepath="$PROJECT_DIR$/.idea/modules/GeneratorInserts_main.iml" group="GeneratorInserts" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GeneratorInserts_test.iml" filepath="$PROJECT_DIR$/.idea/modules/GeneratorInserts_test.iml" group="GeneratorInserts" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/generator.iml" filepath="$PROJECT_DIR$/.idea/modules/generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/generator_main.iml" filepath="$PROJECT_DIR$/.idea/modules/generator_main.iml" group="generator" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/generator_test.iml" filepath="$PROJECT_DIR$/.idea/modules/generator_test.iml" group="generator" />
     </modules>
   </component>
 </project>
