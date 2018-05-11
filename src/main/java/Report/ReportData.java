@@ -43,8 +43,11 @@ public class ReportData {
                 case REPORT_DEBT_NPF_MSK:
                     outFile = Paths.get(propFile.getParam("outFile_debt_npf_msk"));
                     break;
-                case CONTROL_REPORT:
-                    outFile = Paths.get(propFile.getParam("outFile_control_report"));
+                case CONTROL_REPORT_04:
+                    outFile = Paths.get(propFile.getParam("outFile_control_report_04_doc"));
+                    break;
+                case CONTROL_REPORT_06:
+                    outFile = Paths.get(propFile.getParam("outFile_control_report_06_doc"));
                     break;
                 default:
                     outFile = Paths.get("reports_template.sql");
@@ -137,9 +140,13 @@ public class ReportData {
             case REPORT_DEBT_NPF_MSK:
                 accBegParamKey = "acc_id_beg_msk";
                 accEndParamKey = "acc_id_end_msk";
-            case CONTROL_REPORT:
-                accBegParamKey = "acc_id_beg_ctrl";
-                accEndParamKey = "acc_id_end_ctrl";
+            case CONTROL_REPORT_04:
+                accBegParamKey = "acc_id_beg_ctrl_04_doc";
+                accEndParamKey = "acc_id_end_ctrl_04_doc";
+                break;
+            case CONTROL_REPORT_06:
+                accBegParamKey = "acc_id_beg_ctrl_06_doc";
+                accEndParamKey = "acc_id_end_ctrl_06_doc";
                 break;
         }
 
@@ -178,8 +185,11 @@ public class ReportData {
                 case REPORT_DEBT_NPF_SUD:
                     templateReport = Paths.get("templates/report_SUD.tmp").toFile();
                     break;
-                case CONTROL_REPORT:
-                    templateReport = Paths.get("templates/report_CONTROL.tmp").toFile();
+                case CONTROL_REPORT_04:
+                    templateReport = Paths.get("templates/report_CONTROL_04.tmp").toFile();
+                    break;
+                case CONTROL_REPORT_06:
+                    templateReport = Paths.get("templates/report_CONTROL_06.tmp").toFile();
                     break;
                 default:
                     templateReport = Paths.get("templates/report.tmp").toFile();

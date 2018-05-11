@@ -28,12 +28,18 @@ public class GeneratorReportsDataFactory {
                         .generateDeletes()
                         .generateInserts();
                 break;
-            case CONTROL_REPORT:
-                generator = new ReportData(CONTROL_REPORT)
+            case CONTROL_REPORT_04:
+                generator = new ReportData(CONTROL_REPORT_04)
                         .withTemplateFileGeneration(templatePath)
                         .generateDeletes()
                         .generateInserts();
                 break;
+            case CONTROL_REPORT_06:
+                generator = new ReportData(CONTROL_REPORT_06)
+                        .withTemplateFileGeneration(templatePath)
+                        .generateDeletes()
+                        .generateInserts();
+            break;
             default:
                 generator = new ReportData(TEMPLATE)
                         .withTemplateFileGeneration(templatePath)
